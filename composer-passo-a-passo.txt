@@ -1,0 +1,64 @@
+c:\wamp64\www\alura>cd curso-9-composer
+
+c:\wamp64\www\alura\curso-9-composer>composer init
+
+
+  Welcome to the Composer config generator
+
+
+
+This command will guide you through creating your composer.json config.
+
+Package name (<vendor>/<name>) [loglab/curso-9-composer]: luciano/buscador-cursos
+Description []: Projeto que busca os cursos no site da Alura
+Author [Luciano Santos <lucianossweb@gmail.com>, n to skip]:
+Minimum Stability []:
+Package Type (e.g. library, project, metapackage, composer-plugin) []: library
+License []:
+
+Define your dependencies.
+
+Would you like to define your dependencies (require) interactively [yes]?
+Search for a package:
+Would you like to define your dev dependencies (require-dev) interactively [yes]? no
+Add PSR-4 autoload mapping? Maps namespace "Luciano\BuscadorCursos" to the entered relative path. [src/, n to skip]:
+
+{
+    "name": "luciano/buscador-cursos",
+    "description": "Projeto que busca os cursos no site da Alura",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Luciano\\BuscadorCursos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luciano Santos",
+            "email": "lucianossweb@gmail.com"
+        }
+    ],
+    "require": {}
+}
+
+Do you confirm generation [yes]?
+Generating autoload files
+Generated autoload files
+PSR-4 autoloading configured. Use "namespace Luciano\BuscadorCursos;" in src/
+Include the Composer autoloader with: require 'vendor/autoload.php';
+
+
+----------------------------------------------------------
+
+Buscando Pacotes para o composer
+
+https://packagist.org/
+
+pacotes usados neste exemplo foram:
+	
+	https://packagist.org/packages/guzzlehttp/guzzle
+	
+	https://packagist.org/packages/symfony/dom-crawler
+	
+----------------------------------------------------------
+
